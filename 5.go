@@ -27,6 +27,6 @@ func longestPalindrome(s string) string {
 	return ret
 }
 
-func main() {
-	longestPalindrome("")
-}
+//func main() {
+//	longestPalindrome("")
+//}
