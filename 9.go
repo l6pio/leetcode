@@ -19,7 +19,7 @@ func isPalindrome(x int) bool {
 	return k1 == k2
 }
 
-func main() {
-	ret := isPalindrome(12)
-	println(ret)
-}
+//func main() {
+//	ret := isPalindrome(12)
+//	println(ret)
+//}
