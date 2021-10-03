@@ -1,8 +1,8 @@
 package utils
 
-func Sort(nums []int, start int, end int) []int {
+func Sort(nums []int, start int, end int) {
 	if end <= start {
-		return nums
+		return
 	}
 
 	left := start + 1
@@ -17,7 +17,6 @@ func Sort(nums []int, start int, end int) []int {
 	tmp := nums[start]
 	nums[start] = nums[left-1]
 	nums[left-1] = tmp
-	nums = Sort(nums, start, left-2)
-	nums = Sort(nums, left, end)
-	return nums
+	Sort(nums, start, left-2)
+	Sort(nums, left, end)
 }

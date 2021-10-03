@@ -7,7 +7,7 @@ import (
 
 func threeSumClosest(nums []int, target int) int {
 	numsLen := len(nums)
-	nums = utils.Sort(nums, 0, numsLen-1)
+	utils.Sort(nums, 0, numsLen-1)
 
 	if numsLen < 3 {
 		return 0

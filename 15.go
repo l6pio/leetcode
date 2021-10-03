@@ -7,7 +7,7 @@ func threeSum(nums []int) [][]int {
 	if numsLen <= 2 {
 		return [][]int{}
 	}
-	nums = utils.Sort(nums, 0, len(nums)-1)
+	utils.Sort(nums, 0, len(nums)-1)
 
 	var ret [][]int
 	for i, n := range nums {
