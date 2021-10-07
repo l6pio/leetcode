@@ -2,6 +2,8 @@ package main
 
 import "math"
 
+// https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
+
 func lengthOfLongestSubstring(s string) int {
 	maxLen := 0
 	left := -1

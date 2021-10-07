@@ -1,5 +1,9 @@
 package main
 
+import "fmt"
+
+// https://leetcode-cn.com/problems/next-permutation/
+
 func reverse(nums []int, left int, right int) {
 	for left < right {
 		tmp := nums[left]
@@ -43,10 +47,10 @@ func nextPermutation(nums []int) {
 	reverse(nums, left, numsLen-1)
 }
 
-//func main() {
-//	//ret := []int{1, 2, 3, 4, 5}
-//	//ret := []int{5, 4, 3, 2, 1}
-//	ret := []int{1, 5, 4, 3, 2}
-//	nextPermutation(ret)
-//	fmt.Printf("%v\n", ret)
-//}
+func main() {
+	//ret := []int{1, 2, 3, 4, 5}
+	//ret := []int{5, 4, 3, 2, 1}
+	ret := []int{1, 5, 4, 3, 2}
+	nextPermutation(ret)
+	fmt.Printf("%v\n", ret)
+}

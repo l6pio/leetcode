@@ -1,5 +1,7 @@
 package main
 
+// https://leetcode-cn.com/problems/palindrome-number/
+
 func isPalindrome(x int) bool {
 	if x < 0 {
 		return false
@@ -19,7 +21,7 @@ func isPalindrome(x int) bool {
 	return k1 == k2
 }
 
-//func main() {
-//	ret := isPalindrome(12)
-//	println(ret)
-//}
+func main() {
+	ret := isPalindrome(12)
+	println(ret)
+}

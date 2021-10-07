@@ -1,13 +1,13 @@
 package main
 
 import (
-	"l6p.io/leetcode/utils"
 	"math"
+	"sort"
 )
 
 func threeSumClosest(nums []int, target int) int {
 	numsLen := len(nums)
-	utils.Sort(nums, 0, numsLen-1)
+	sort.Ints(nums)
 
 	if numsLen < 3 {
 		return 0
@@ -36,7 +36,7 @@ func threeSumClosest(nums []int, target int) int {
 	return ret
 }
 
-//func main() {
-//	ret := threeSumClosest([]int{-1, 2, 1, -4}, 1)
-//	println(ret)
-//}
+func main() {
+	ret := threeSumClosest([]int{-1, 2, 1, -4}, 1)
+	println(ret)
+}

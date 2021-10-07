@@ -2,6 +2,8 @@ package main
 
 import "math"
 
+// https://leetcode-cn.com/problems/container-with-most-water/
+
 func maxArea(height []int) int {
 	ret := 0
 	left := 0
@@ -18,6 +20,6 @@ func maxArea(height []int) int {
 	return ret
 }
 
-//func main() {
-//	println(maxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
-//}
+func main() {
+	println(maxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
+}

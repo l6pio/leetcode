@@ -1,5 +1,7 @@
 package main
 
+// https://leetcode-cn.com/problems/longest-palindromic-substring/
+
 func longestPalindrome(s string) string {
 	var m [][]bool
 	sLen := len(s)
@@ -27,6 +29,6 @@ func longestPalindrome(s string) string {
 	return ret
 }
 
-//func main() {
-//	longestPalindrome("")
-//}
+func main() {
+	longestPalindrome("")
+}

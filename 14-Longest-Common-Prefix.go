@@ -1,5 +1,7 @@
 package main
 
+// https://leetcode-cn.com/problems/longest-common-prefix/
+
 func longestCommonPrefix(strs []string) string {
 	strsLen := len(strs)
 
@@ -28,7 +30,7 @@ func longestCommonPrefix(strs []string) string {
 	return strs[0][:right]
 }
 
-//func main() {
-//	prefix := longestCommonPrefix([]string{"dog"})
-//	println(prefix)
-//}
+func main() {
+	prefix := longestCommonPrefix([]string{"dog"})
+	println(prefix)
+}

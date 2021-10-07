@@ -1,5 +1,9 @@
 package main
 
+import "fmt"
+
+// https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
 func binarySearch(nums []int, left int, right int, target int, findRightMost bool) int {
 	if left > right {
 		return -1
@@ -41,8 +45,8 @@ func searchRange(nums []int, target int) []int {
 	return []int{left, right}
 }
 
-//func main() {
-//	nums := []int{5, 7, 7, 8, 8, 10}
-//	boundary := searchRange(nums, 10)
-//	fmt.Printf("%+v", boundary)
-//}
+func main() {
+	nums := []int{5, 7, 7, 8, 8, 10}
+	boundary := searchRange(nums, 10)
+	fmt.Printf("%+v", boundary)
+}

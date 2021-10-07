@@ -36,8 +36,8 @@ func search(nums []int, target int) int {
 	return Search(nums, 0, len(nums)-1, target)
 }
 
-//func main() {
-//	nums := []int{5}
-//	ret := search(nums, 2)
-//	println(ret)
-//}
+func main() {
+	nums := []int{5}
+	ret := search(nums, 2)
+	println(ret)
+}

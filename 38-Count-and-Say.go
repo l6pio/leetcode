@@ -26,7 +26,7 @@ func countAndSay(n int) string {
 	return ret
 }
 
-//func main()  {
-//	say := countAndSay(10)
-//	println(say)
-//}
+func main() {
+	say := countAndSay(10)
+	println(say)
+}

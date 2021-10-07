@@ -1,13 +1,16 @@
 package main
 
-import "l6p.io/leetcode/utils"
+import (
+	"fmt"
+	"sort"
+)
 
 func threeSum(nums []int) [][]int {
 	numsLen := len(nums)
 	if numsLen <= 2 {
 		return [][]int{}
 	}
-	utils.Sort(nums, 0, len(nums)-1)
+	sort.Ints(nums)
 
 	var ret [][]int
 	for i, n := range nums {
@@ -37,7 +40,7 @@ func threeSum(nums []int) [][]int {
 	return ret
 }
 
-//func main() {
-//	ret := threeSum([]int{0, 0, 0})
-//	fmt.Printf("%+v", ret)
-//}
+func main() {
+	ret := threeSum([]int{0, 0, 0})
+	fmt.Printf("%+v", ret)
+}

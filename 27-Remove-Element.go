@@ -1,5 +1,9 @@
 package main
 
+import "fmt"
+
+// https://leetcode-cn.com/problems/remove-element/
+
 func removeElement(nums []int, val int) int {
 	numsLen := len(nums)
 	keep := 0
@@ -14,8 +18,8 @@ func removeElement(nums []int, val int) int {
 	return keep
 }
 
-//func main() {
-//	arr := []int{1, 2, 3}
-//	ret := removeElement(arr, 2)
-//	fmt.Printf("%v, %v", arr, ret)
-//}
+func main() {
+	arr := []int{1, 2, 3}
+	ret := removeElement(arr, 2)
+	fmt.Printf("%v, %v", arr, ret)
+}
