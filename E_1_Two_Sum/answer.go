@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package E_1_Two_Sum
 
 // https://leetcode-cn.com/problems/two-sum/
 
@@ -13,10 +11,4 @@ func twoSum(nums []int, target int) []int {
 		m[target-n] = i
 	}
 	return []int{-1, -1}
-}
-
-func main() {
-	nums := []int{2, 7, 11, 15}
-	ret := twoSum(nums, 18)
-	fmt.Printf("%+v", ret)
 }
